@@ -1,0 +1,428 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    
+    background-color: #FFF;
+}
+
+.container {
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+}
+
+/* Start Landing Page */
+
+.landing-page {
+    position: relative;
+   
+}
+
+.landing-page .header-area {
+    display: flex;
+    padding: 25px 0 0;
+    position: relative;
+}
+
+.landing-page .header-area .logo img{
+    margin-top: 10px;
+    width: 100px;
+}
+.landing-page .header-area .logo1 {
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 40px;
+    font-size: 30px;
+    width: 300px;
+    color: FF5050;
+}
+
+.landing-page .header-area .links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: right;
+    color: FF5050;
+}
+
+.landing-page .header-area .links li {
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: FF5050;
+    cursor: pointer;
+}
+.landing-page .header-area .links li a{
+    color: FF5050;
+    text-decoration:wavy;
+}
+.landing-page .header-area .links li a:hover{
+    color: black;
+    text-decoration:wavy;
+}
+.landing-page .header-area .links li:last-child {
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 18px;
+    color: #FFF;
+}
+
+.landing-page .info {
+    width: 35%;
+    float: left;
+    margin-top: 130px;
+}
+
+.landing-page .info h1 {
+    font-size: 44px;
+    margin: 0 0 20px;
+    line-height: 1.4;
+    color: #FFC500;
+}
+
+.landing-page .info p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 15px;
+    color: black;
+}
+
+.landing-page .info button {
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: FF5050;
+}
+.landing-page .info button:hover {
+    background-color: #FFC500;
+}
+.landing-page .info button a{
+    text-decoration: none;
+}
+.landing-page .image {
+    width: 50%;
+    float: right;
+    margin-top: 35px;
+    height: 50%;
+}
+
+.landing-page .image img {
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 130px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.skills {
+    padding: 10px;
+    width: 500px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 400px;
+  }
+  
+  .skill {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .title {
+    color: black;
+    font-weight: 700;
+  }
+  
+  .progress-bar {
+    background: #404040;
+    border-radius: 3px;
+    width: 100%;
+    height: 15px;
+    margin-top: 5px;
+  /*   overflow: hidden; */
+  }
+  
+  .progress {
+  /*   width: 0; */
+  }
+  
+  #html .progress {
+    max-width: 90%;
+    height: 100%;
+    background: #ed2828;
+    border-radius: 3px;
+    position: relative;
+    animation: 1s ease 0s 1 loadBars; 
+  }
+  
+  #html .progress::after {
+    content: "90%";
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    height: 15px;
+    width: 30px;
+    background: #fff;
+    position: absolute;
+    padding: 2px 3px;
+    border-radius: 4px;
+    right: -18px;
+    top: -30px;
+  }
+  
+  #html .progress::before {
+    content: "";
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    right: -5px;
+    top: -12px;  
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #fff;
+  }
+  
+  #css .progress {
+    max-width: 70%;
+    height: 100%;
+    background: #ed2828;
+    position: relative;
+    animation: 1s ease 0s 1 loadBars; 
+  }
+  
+  #css .progress::after {
+    content: "70%";
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    height: 15px;
+    width: 30px;
+    background: #fff;
+    position: absolute;
+    padding: 2px 3px;
+    border-radius: 4px;
+    right: -18px;
+    top: -30px;
+  }
+  
+  #css .progress::before {
+    content: "";
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    right: -5px;
+    top: -12px;  
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #fff;
+  }
+  
+  #js .progress {
+    max-width: 60%;
+    height: 100%;
+    background: #ed2828;
+    position: relative;
+    animation: 1s ease 0s 1 loadBars; 
+  }
+  
+  #js .progress::after {
+    content: "60%";
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    height: 15px;
+    width: 30px;
+    background: #fff;
+    position: absolute;
+    padding: 2px 3px;
+    border-radius: 4px;
+    right: -18px;
+    top: -30px;
+  }
+  
+  #js .progress::before {
+    content: "";
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    right: -5px;
+    top: -12px;  
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #fff;
+  }
+  
+  @keyframes loadBars{
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+    
+  }
+  #skillsec{
+    text-align: center;
+    color: #FFC500;
+    font-size: 40px;
+    margin-top:200px;
+  }
+
+  .flip-card {
+    background-color:#FFC500;
+    width: 300px;
+    height: 250px;
+    border: 1px solid gainsboro;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    
+    float: left;
+    margin: auto 60px;
+    margin-top: 40px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: white;
+    color:#FFC500;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color:#ed2828;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  #school{
+    color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+  }
+  #marks{
+    font-size: 20px;
+    color:#FFC500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+  }
+  #college{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+.f{
+  color: #FFC500;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+label,
+input,
+textarea {
+    display: block;
+    width: 100%;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 0.3em;
+}
+span {
+    font-weight: 700;
+    color: white;
+    line-height: 35px;
+    line-height: 2.5rem;
+    font-size: 12px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+input[type="submit"] {
+    background:#FFC500;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    margin-top: 1.3em;
+}
+
+.container1 {
+    width: 460px;
+    margin: 5em auto;
+    margin-top: 70px;
+}
+form {
+    background-color:#ed2828;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.required-star {
+    color: #fc4366;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 9px 20px;
+    border: 2px solid #e1e2eb;
+    background-color: #fff;
+    color: #102a43;
+    caret-color: #829ab1;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 29px;
+    line-height: 2rem;
+    box-shadow: inset 0 2px 4px 0 #918c8c;
+    border-radius: 3px;
+    line-height: 29px;
+    line-height: 2rem;
+}
+
+
+  

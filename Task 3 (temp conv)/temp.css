@@ -1,0 +1,126 @@
+#tc{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-style: oblique;
+    margin: auto;
+    margin-top: 60px;
+    font-weight: normal;
+    color: #8AAAE5;
+    font-size: 40px ;
+  }
+    
+    * {
+      padding: 0;
+      margin: 0;
+     
+    }
+    
+    body {
+      background-color:white;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    
+    input[type="number"] {
+      -moz-appearance: textfield;
+      background-color: #8AAAE5;
+    }
+    
+    main {
+      width: 300px;
+      height: 200px;
+      margin: auto;
+      margin-bottom: 8rem;
+      margin-top: 4rem;
+      padding: 1.5rem;
+      padding-top: 3rem;
+      background-color: rgb(235, 228, 228);
+      box-shadow: 5px 5px 5px #FCF6F5FF;
+      border: 3px solid #EEE2DC;
+      border-radius: 10px;
+    }
+    
+    form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    
+    form button {
+      padding: 0.75rem;
+      border-radius: 5px;
+      border: 2px solid #d3cfcd;
+      color: black;
+      margin: auto;
+      margin-top: 30px;
+      background-color: whitesmoke	;
+      width:300px;
+      transition: all .1s ease-in-out;
+  }
+  form button:hover {
+      transform: scale(1.1);
+      background-color: #8AAAE5;
+  }
+    
+    .float-container {
+      position: relative;
+    }
+    
+    .float-container * {
+      border: 2px solid #dad3d0;
+      position: relative;
+    }
+    
+    .float-container input,
+    .float-container select {
+      padding: 0.75rem;
+      border-radius: 5px;
+      background-color: whitesmoke;
+    }
+    
+    .float-container .type {
+      position: absolute;
+      margin-top: -30px;
+      left: 0;
+      color:#8AAAE5;
+      font-size: 18px;
+      border: none;
+    }
+    
+    .float-container .degrees {
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      transform: translateY(-50%);
+      color: #8AAAE5;
+      border: none;
+      transition: all 0.1s ease;
+      pointer-events: none;
+    }
+    
+    .float-container input[type="number"]:focus ~ .degrees,
+    .float-container input[type="number"]:not(:focus):valid ~ .degrees {
+      top: -30px;
+      left: 0;
+      font-size: 18px;
+      transform: translateY(0);
+    }
+    
+    .result {
+      margin-top: 1rem;
+      min-height: 2.5rem;
+      font-size: 18px;
+    }
+    
+    .result p:nth-child(1) {
+      font-size: 20px;
+      color: #8AAAE5;
+    }
+    .result p:nth-child(2) {
+      margin-top: 0.1rem;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+      color: #8AAAE5;
+    }
+    
